@@ -25,7 +25,7 @@ def talk_to_me(bot, update):
     update.message.reply_text(user_text)
 
 def main():
-    mybot = Updater(, request_kwargs=PROXY)
+    mybot = Updater(settings.API_KEY, request_kwargs=settings.PROXY)
 
 
     dp = mybot.dispatcher
